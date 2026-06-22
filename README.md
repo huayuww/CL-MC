@@ -30,7 +30,7 @@ videos/
 
 **3. Configure paths**
 
-Open `CL-MR.py` and edit the paths at the top of `main()` if needed:
+Open `CL-MC.py` and edit the paths at the top of `main()` if needed:
 
 ```python
 yolo_path      = "ckpt/yolo_weight.pt"   # YOLO detection weights
@@ -41,10 +41,10 @@ save_dir       = "output/"               # folder for output tracking results
 
 The SAM2 model will be downloaded automatically by `ultralytics` on first run.
 
-**4. Run CL-MR tracking**
+**4. Run CL-MC tracking**
 
 ```bash
-python CL-MR.py
+python CL-MC.py
 ```
 
 Results are saved as `.txt` files in `output/`, one per video, with per-frame bounding boxes in normalized `x_center y_center width height confidence` format.
